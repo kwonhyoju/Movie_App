@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
-    "gh-pages": "^2.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
@@ -12,7 +11,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "deploy":"gh-pages -d build",
+    "predeploy":"npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,5 +29,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "https://kwonhyoju.github.io/movie_app/"
 }
